@@ -16,11 +16,11 @@ app.secret_key = secrets.token_hex(16)
 
 import psycopg2
 from urllib.parse import urlparse
-url = urlparse("postgres://powerguard_user:qraDCcZYglRcRYEzyOO7iaunanU6KFvh@dpg-cqg9ql2ju9rs73c9vr1g-a.oregon-postgres.render.com/powerguard")
+url = urlparse("postgres://powerguard_ponm_user:1WP2XxUNDXexCVESzF0G8TPPjJbcWZFz@dpg-cr8mbilsvqrc739caaig-a.oregon-postgres.render.com/powerguard_ponm")
 
 # Extract connection parameters
 db_params = {
-    'host': "dpg-cqg9ql2ju9rs73c9vr1g-a.oregon-postgres.render.com",
+    'host': "dpg-cr8mbilsvqrc739caaig-a.oregon-postgres.render.com",
     'user': url.username,
     'password': url.password,
     'database': url.path[1:],
